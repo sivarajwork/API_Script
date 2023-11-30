@@ -311,6 +311,15 @@ public class Webelements extends Driver_initialization {
 		public WebElement MMM_Cancel_button_filter;
 		
 		
+		//MTA screen
+		
+				@FindBy(xpath="//ul/li[contains(text(),' Content Optimization')]")
+				public WebElement MTA_tab;
+				
+				
+				@FindBy(xpath="//div[@class='heliosz-header']//div[@class='header-icon'][2]")
+				 public WebElement MTA_Global_filter;
+		
 	public static void start_Date_value(String start_date) {
 		WebElement date = 	driver.findElement(By.xpath("//button/span[normalize-space(text())='"+start_date+"']"));
 		date.click();
